@@ -1,9 +1,94 @@
 *, *:before, *:after 
     box-sizing: border-box
+body
+  font-family: 'HelveticaNeueCyr', sans-serif
 
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1)
+  position: relative
+  z-index: 2
+  &__logo
+    text-transform: uppercase
+    margin: 38px 0 38px 34px
+    font-size: 35px
+    font-weight: 550
+    letter-spacing: -0.95px
+  &__name
+    font-size: 16px
+    font-weight: normal
+    color: #404040
+    &::after 
+      content: ''
+      display: inline-block
+      width: 16px
+      height: 16px
+      border-top: 2px solid #404040
+      border-right: 2px solid #404040
+      transform: rotate(135deg)
+      margin: 0 48px 2px 11px
+      cursor: pointer
 
-  
- 
+li
+  list-style-type: none
+  cursor: pointer
+.sidebar
+  width: 312px
+  height: 100vh
+  background: #F6F8FA
+  color: #58647A
+  padding: 44px 15px 0 15px
+  &__list
+    font-style: normal
+    padding: 26px 0 26px 15px
+    margin: 0 0 10px 0 
+    font-size: 18px
+    // letter-spacing: 0.06rem
+  &__list--arrow
+    font-size: 14px
+    margin: 0 0 44px 0
+    font-style: normal
+    padding: 0 0 0 15px
+    &::before
+      content: ''
+      display: inline-block
+      width: 9px
+      height: 9px
+      border-top: 2px solid #58647A
+      border-right: 2px solid #58647A
+      transform: rotate(225deg)
+      margin: 0 1px 0 0 
+      cursor: pointer
+  &__list--big
+    font-size: 22px
+    padding: 0 0 0 15px
+  &__list--head
+    margin: 72px 0 38px 0
+    padding: 0 0 0 15px
+    font-size: 18px
+  .list__text
+    font-size: 12px
+    margin: 9px 0 0 0
+  .list__activ
+    width: 273px
+    background: #2F73EA
+    border-radius: 10px
+    color: #FFFFFF
+    padding: 26px 0 26px 15px
+    &::before
+      content: ''
+      display: inline-block
+      width: 4px
+      height: 70px
+      background: #2F73EA
+      margin: -26px 0 0 -30px
+      position: absolute
+      border-radius: 40px
+      
+      
+
 
 
 
