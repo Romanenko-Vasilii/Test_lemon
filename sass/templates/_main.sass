@@ -1,7 +1,7 @@
 *, *:before, *:after 
     box-sizing: border-box
 body
-  font-family: 'HelveticaNeueCyr', sans-serif
+  font-family: HelveticaNeueCyr, sans-serif
 
 .header
   display: flex
@@ -31,6 +31,9 @@ body
       margin: 0 48px 2px 11px
       cursor: pointer
 
+.main
+  display: flex  
+
 li
   list-style-type: none
   cursor: pointer
@@ -39,11 +42,11 @@ li
   height: 100vh
   background: #F6F8FA
   color: #58647A
-  padding: 44px 15px 0 15px
+  padding: 50px 15px 0 15px
   &__list
     font-style: normal
     padding: 26px 0 26px 15px
-    margin: 0 0 10px 0 
+    margin: 0 0 9px 0 
     font-size: 18px
     // letter-spacing: 0.06rem
   &__list--arrow
@@ -65,18 +68,18 @@ li
     font-size: 22px
     padding: 0 0 0 15px
   &__list--head
-    margin: 72px 0 38px 0
+    margin: 75px 0 38px 0
     padding: 0 0 0 15px
     font-size: 18px
   .list__text
     font-size: 12px
     margin: 9px 0 0 0
-  .list__activ
+  &__list--activ
     width: 273px
     background: #2F73EA
     border-radius: 10px
     color: #FFFFFF
-    padding: 26px 0 26px 15px
+    padding: 25px 0 25px 15px
     &::before
       content: ''
       display: inline-block
@@ -87,8 +90,106 @@ li
       position: absolute
       border-radius: 40px
       
+.contant
+  width: 100%
+  padding: 57px 30px 0 30px
+  &__title
+    font-size: 27px
+    font-weight: 550
+  &__nav
+    display: flex
+    margin: 40px 0 0 0
+  &__head
+    display: flex
+    background: #F5F7FB
+    border-radius: 10px
+    margin: 30px 0 0 0
+  &__info
+    display: flex
+    border-bottom: 2px solid #F6F8FA
+.nav__list
+  padding: 16px 21px 13px 21px
+  background: #F6F8FA
+  border-radius: 10px
+  margin: 0 20px 0 0
+  color: #000000
+  font-size: 18px
+  &--active
+    background: #2F73EA
+    color: #FFFFFF
+.nav li:last-child
+  margin: 0 
+.head__list
+  padding: 21px 0 21px 21px
+  font-size: 16px
+  font-weight: normal
+  color: #58647A
+  width: 389px
+.info__list
+  padding: 20px 0 20px 21px
+  font-size: 16px
+  font-weight: normal
+  width: 389px
+  color: #000000
+.add 
+  margin: 20px 0 0 0
+  font-size: 16px
+  padding: 0 0 0 21px
+  &::before
+    content: '+'
+    display: inline-block
+    font-size: 27px
+    width: 29px
+    height: 29px
+    border-radius: 5px
+    color: #FFFFFF
+    background: #2F73EA
+    text-align: center
+    vertical-align: middle
+    margin: 0 10px 0 0
+    cursor: pointer
+  
+.modal
+  width: 960px
+  height: 1250px
+  background: #E5E5E5
+  margin-left: 100px
+  padding: 40px 60px 0 60px
+  &__close
+    text-align: right
+    height: 37px
+    padding-right: 20px
+    // border-bottom: 2px solid #000000
+    // cursor: pointer
+    // transform: rotate(45deg)
+    // margin-left: 50px
+    &::before
+      position: absolute
+      content: ''
+      display: inline
+      width: 37px
+      height: 37px
+      border-top: 2px solid #000000
+      transform: rotate(45deg)
+      margin: 0px 0 0 -24px
+    &::after
+      position: absolute
+      content: ''
+      display: inline
+      width: 37px
+      height: 37px
+      border-top: 2px solid #000000
+      transform: rotate(-45deg)
       
-
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: 
+      
+      
+    
+      
+      
 
 
 
