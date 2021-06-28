@@ -148,19 +148,37 @@ li
     vertical-align: middle
     margin: 0 10px 0 0
     cursor: pointer
-  
-.modal
+.modal__wrap
   width: 960px
-  height: 1250px
   
+  &--visible
+    opacity: 1
+    visibility: visible
+    z-index: 400
+.modal
+  // width: 960px
+  // height: 1250px
+  opacity: 0
   margin-left: 100px
   padding: 40px 60px 0 60px
+  visibility: visible
+  position: fixed
+  background-color: #E6EFF7
+  z-index: -1
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  &--visible
+    opacity: 1
+    visibility: visible
+    z-index: 400
   &__close
     text-align: right
     height: 37px
     padding-right: 20px
     // border-bottom: 2px solid #000000
-    // cursor: pointer
+    cursor: pointer
     // transform: rotate(45deg)
     // margin-left: 50px
     &::before
@@ -180,14 +198,6 @@ li
       height: 37px
       border-top: 2px solid #000000
       transform: rotate(-45deg)
-      
-  &__head
-    display: flex
-    justify-content: space-between
-    margin: 50px 0 0 0
-    padding: 0 0 30px 0 
-    border-bottom: 2px solid #E6EFF7
-.modal
   &__title
     font-size: 28px
     color: #000000
@@ -198,6 +208,15 @@ li
     border: none 
     padding: 15px 35px
     border-radius: 10px
+    cursor: pointer    
+  &__head
+    display: flex
+    justify-content: space-between
+    margin: 50px 0 0 0
+    padding: 0 0 30px 0 
+    border-bottom: 2px solid #E6EFF7
+.stop-scroll
+  overflow: hidden
 .form
   &__group
     font-size: 16px
@@ -220,10 +239,10 @@ input::placeholder
   background: #F5F8FB
   border-radius: 10px
   border: 1px solid #E6EFF7
-  
-  
+
 .select 
-  width: 622px
+  appearance: none
+  width: 642px
   background: #F5F8FB
   border: none
   padding: 14px 20px 12px 20px
@@ -231,6 +250,7 @@ input::placeholder
   border: 1px solid #E6EFF7
   border-right: none
   cursor: pointer
+  background-image: url()
     
       
       

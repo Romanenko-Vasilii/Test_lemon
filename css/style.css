@@ -461,15 +461,34 @@ li {
     margin: 0 10px 0 0;
     cursor: pointer; }
 
+.modal__wrap {
+  width: 960px; }
+  .modal__wrap--visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 400; }
+
 .modal {
-  width: 960px;
-  height: 1250px;
+  opacity: 0;
   margin-left: 100px;
-  padding: 40px 60px 0 60px; }
+  padding: 40px 60px 0 60px;
+  visibility: visible;
+  position: fixed;
+  background-color: #E6EFF7;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 400; }
   .modal__close {
     text-align: right;
     height: 37px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    cursor: pointer; }
     .modal__close::before {
       position: absolute;
       content: '';
@@ -487,6 +506,17 @@ li {
       height: 37px;
       border-top: 2px solid #000000;
       transform: rotate(-45deg); }
+  .modal__title {
+    font-size: 28px;
+    color: #000000; }
+  .modal__button {
+    color: #FFFFFF;
+    background: #2F73EA;
+    outline: none;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer; }
   .modal__head {
     display: flex;
     justify-content: space-between;
@@ -494,17 +524,8 @@ li {
     padding: 0 0 30px 0;
     border-bottom: 2px solid #E6EFF7; }
 
-.modal__title {
-  font-size: 28px;
-  color: #000000; }
-
-.modal__button {
-  color: #FFFFFF;
-  background: #2F73EA;
-  outline: none;
-  border: none;
-  padding: 15px 35px;
-  border-radius: 10px; }
+.stop-scroll {
+  overflow: hidden; }
 
 .form__group {
   font-size: 16px;
@@ -539,14 +560,18 @@ input::placeholder {
   border: 1px solid #E6EFF7; }
 
 .select {
-  width: 622px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 642px;
   background: #F5F8FB;
   border: none;
   padding: 14px 20px 12px 20px;
   border-radius: 10px;
   border: 1px solid #E6EFF7;
   border-right: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background-image: url(); }
 
 @font-face {
   font-family: 'Stylo';
