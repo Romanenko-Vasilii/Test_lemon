@@ -46,7 +46,7 @@ li
   &__list
     font-style: normal
     padding: 26px 0 26px 15px
-    margin: 0 0 9px 0 
+    margin: 0 0 14px 0 
     font-size: 18px
     // letter-spacing: 0.06rem
   &__list--arrow
@@ -92,18 +92,18 @@ li
       
 .contant
   width: 100%
-  padding: 57px 30px 0 30px
+  padding: 57px 30px 0 41px
   &__title
     font-size: 27px
     font-weight: 550
   &__nav
     display: flex
-    margin: 40px 0 0 0
+    margin: 38px 0 0 0
   &__head
     display: flex
     background: #F5F7FB
     border-radius: 10px
-    margin: 30px 0 0 0
+    margin: 28px 0 -2px 0
   &__info
     display: flex
     border-bottom: 2px solid #F6F8FA
@@ -111,7 +111,7 @@ li
   padding: 16px 21px 13px 21px
   background: #F6F8FA
   border-radius: 10px
-  margin: 0 20px 0 0
+  margin: 0 23px 0 0
   color: #000000
   font-size: 18px
   &--active
@@ -148,8 +148,11 @@ li
     vertical-align: middle
     margin: 0 10px 0 0
     cursor: pointer
-.modal__wrap
-  width: 960px
+.wrap__modal
+  width: 940px
+  background-color: #FFFFFF
+  padding: 40px 60px 0 60px
+  
   
   &--visible
     opacity: 1
@@ -159,16 +162,16 @@ li
   // width: 960px
   // height: 1250px
   opacity: 0
-  margin-left: 100px
-  padding: 40px 60px 0 60px
   visibility: visible
   position: fixed
-  background-color: #E6EFF7
+  background-color:  #E6EFF7
   z-index: -1
   left: 0
   top: 0
   right: 0
   bottom: 0
+  display: flex
+  justify-content: center
   &--visible
     opacity: 1
     visibility: visible
@@ -198,29 +201,35 @@ li
       height: 37px
       border-top: 2px solid #000000
       transform: rotate(-45deg)
+  &__form
+    margin: 50px 0 0 0
   &__title
     font-size: 28px
     color: #000000
+    margin: -30px 0 0 0
   &__button
     color: #FFFFFF
     background: #2F73EA
     outline: none 
     border: none 
+    font-size: 18px
     padding: 15px 35px
     border-radius: 10px
-    cursor: pointer    
+    cursor: pointer 
+    // margin: 10px 0 0 0   
   &__head
     display: flex
     justify-content: space-between
-    margin: 50px 0 0 0
-    padding: 0 0 30px 0 
+    align-items: center
+    margin: 30px 0 0 0
+    padding: 13px 0 23px 0 
     border-bottom: 2px solid #E6EFF7
 .stop-scroll
   overflow: hidden
 .form
   &__group
     font-size: 16px
-    margin: 50px 0 0 0
+    margin: 0 0 27px 0
     display: flex
     align-items: center
   &__label
@@ -235,14 +244,19 @@ li
 input::placeholder 
   color: #000000
 .wrap__select
+  
   width: 642px  
   background: #F5F8FB
   border-radius: 10px
   border: 1px solid #E6EFF7
+  
+    
+
+    
 
 .select 
-  appearance: none
-  width: 642px
+  // appearance: none
+  width: 610px
   background: #F5F8FB
   border: none
   padding: 14px 20px 12px 20px
@@ -250,7 +264,15 @@ input::placeholder
   border: 1px solid #E6EFF7
   border-right: none
   cursor: pointer
-  background-image: url()
+ 
+  
+    
+.option
+  background: #F5F8FB
+  border: none
+  border-radius: 10px
+
+  
     
       
       

@@ -354,7 +354,7 @@ li {
   .sidebar__list {
     font-style: normal;
     padding: 26px 0 26px 15px;
-    margin: 0 0 9px 0;
+    margin: 0 0 14px 0;
     font-size: 18px; }
   .sidebar__list--arrow {
     font-size: 14px;
@@ -399,18 +399,18 @@ li {
 
 .contant {
   width: 100%;
-  padding: 57px 30px 0 30px; }
+  padding: 57px 30px 0 41px; }
   .contant__title {
     font-size: 27px;
     font-weight: 550; }
   .contant__nav {
     display: flex;
-    margin: 40px 0 0 0; }
+    margin: 38px 0 0 0; }
   .contant__head {
     display: flex;
     background: #F5F7FB;
     border-radius: 10px;
-    margin: 30px 0 0 0; }
+    margin: 28px 0 -2px 0; }
   .contant__info {
     display: flex;
     border-bottom: 2px solid #F6F8FA; }
@@ -419,7 +419,7 @@ li {
   padding: 16px 21px 13px 21px;
   background: #F6F8FA;
   border-radius: 10px;
-  margin: 0 20px 0 0;
+  margin: 0 23px 0 0;
   color: #000000;
   font-size: 18px; }
   .nav__list--active {
@@ -461,17 +461,17 @@ li {
     margin: 0 10px 0 0;
     cursor: pointer; }
 
-.modal__wrap {
-  width: 960px; }
-  .modal__wrap--visible {
+.wrap__modal {
+  width: 940px;
+  background-color: #FFFFFF;
+  padding: 40px 60px 0 60px; }
+  .wrap__modal--visible {
     opacity: 1;
     visibility: visible;
     z-index: 400; }
 
 .modal {
   opacity: 0;
-  margin-left: 100px;
-  padding: 40px 60px 0 60px;
   visibility: visible;
   position: fixed;
   background-color: #E6EFF7;
@@ -479,7 +479,9 @@ li {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: flex;
+  justify-content: center; }
   .modal--visible {
     opacity: 1;
     visibility: visible;
@@ -506,22 +508,27 @@ li {
       height: 37px;
       border-top: 2px solid #000000;
       transform: rotate(-45deg); }
+  .modal__form {
+    margin: 50px 0 0 0; }
   .modal__title {
     font-size: 28px;
-    color: #000000; }
+    color: #000000;
+    margin: -30px 0 0 0; }
   .modal__button {
     color: #FFFFFF;
     background: #2F73EA;
     outline: none;
     border: none;
+    font-size: 18px;
     padding: 15px 35px;
     border-radius: 10px;
     cursor: pointer; }
   .modal__head {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0 0 0;
-    padding: 0 0 30px 0;
+    align-items: center;
+    margin: 30px 0 0 0;
+    padding: 13px 0 23px 0;
     border-bottom: 2px solid #E6EFF7; }
 
 .stop-scroll {
@@ -529,7 +536,7 @@ li {
 
 .form__group {
   font-size: 16px;
-  margin: 50px 0 0 0;
+  margin: 0 0 27px 0;
   display: flex;
   align-items: center; }
 
@@ -560,18 +567,19 @@ input::placeholder {
   border: 1px solid #E6EFF7; }
 
 .select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 642px;
+  width: 610px;
   background: #F5F8FB;
   border: none;
   padding: 14px 20px 12px 20px;
   border-radius: 10px;
   border: 1px solid #E6EFF7;
   border-right: none;
-  cursor: pointer;
-  background-image: url(); }
+  cursor: pointer; }
+
+.option {
+  background: #F5F8FB;
+  border: none;
+  border-radius: 10px; }
 
 @font-face {
   font-family: 'Stylo';

@@ -15,7 +15,7 @@ $(document).ready(function(){
       for(var i=0; i < response['regions'].length; i++) {
         text = text + '<option value="'+ response['regions'][i].id +'">' + response['regions'][i].name + '</option>';
       };
-      $('#qwe').append(text);
+      $('#sel').append(text);
     }
   });
 
