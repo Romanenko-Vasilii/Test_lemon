@@ -11,27 +11,47 @@ $(document).ready(function(){
     url: "http://api.limon.agency/public/api/regions",
     dataType: 'json',
     success: function(response){
-      var text = '';
+      var arr = [''];
       for(var i=0; i < response['regions'].length; i++) {
-        text = text + '<option value="'+ response['regions'][i].id +'">' + response['regions'][i].name + '</option>';
+        arr.push(response['regions'][i].name);
       };
-      $('#sel').append(text);
+      const select_reg = new CustomSelect('#select_region', {
+        // текст (значение) по умолчанию
+        defaultValue: 'Кемеровская область',
+       // опции
+        data: arr,
+      });
+
+      // var text = '';
+      // for(var i=0; i < response['regions'].length; i++) {
+      //   text = text + '<option value="'+ response['regions'][i].id +'">' + response['regions'][i].name + '</option>';
+      // };
+      // $('#sel').append(text);
+      
     }
   });
 
 
   var modal = $('.modal');
-      modalBtn = $('.add');
+      addBtn = $('.add');
       closeBtn = $('.modal__close');
       body = $('.body')
+      modalBtn = $('.modal__button')
+      bgc = $('.bgc')
 
-  modalBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
-    body.toggleClass('stop-scroll'); //убирает скролл body
+  addBtn.on('click', function () {
+    modal.addClass('modal--visible');
+    body.addClass('stop-scroll'); //убирает скролл body
+    bgc.addClass('bgc--visible')
   });
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
     body.toggleClass('stop-scroll'); //включает скролл body
+    bgc.removeClass('bgc--visible');
+  });
+  modalBtn.on('click', function(){
+    modal.removeClass('modal--visible');
+    bgc.removeClass('bgc--visible');
   });
 
    
@@ -42,6 +62,7 @@ $(document).ready(function(){
     }
   }
   window.addEventListener('keydown', press, false);
+
 
 });
 

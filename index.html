@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тестовое задание</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- подключаем CSS селекта -->
+  <link rel="stylesheet" href="css/custom_select.css">
+
+  <!-- подключаем JS селекта -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/custom_select.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 <body class="body">
@@ -69,6 +74,7 @@
     </div>
     <!-- /.contant -->
   </main>
+  <div class="bgc"></div>
   <div class="modal">
     <div class="wrap__modal">
       <div class="modal__close"></div>
@@ -87,13 +93,10 @@
         <!-- /.form__group -->
         <div class="group form__group">
           <label class="label form__label">Регион</label>
-        <div class="wrap__select">
-          <select name="" id="sel" class="select">
-            <option class="option" value="">Не выбрано</option>
-            <!-- <option>Республика Адыгея</option>
-            <option>Республика Адыгея</option> -->
-          </select>
-        </div>
+        <!-- <div class="wrap__select">
+          
+        </div> -->
+        <div id="select_region" class="wrap__selecet"></div>
         <!-- /.wrap__selecet -->
         
         </div>
